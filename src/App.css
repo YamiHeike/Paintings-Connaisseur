@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+#root {
+  box-sizing: border-box;
+  font-size: 1.25em;
+  min-height: 100dvh;
+  background-image: url('./assets/lou.jpg');
+  background-position: 90%;
+  min-height: 100vh;
+}
+
+
+
+ol, ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media all and (max-width: 768px) {
+  #root {
+    background-image: none;
+  }
+}

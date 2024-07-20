@@ -1,6 +1,6 @@
 import PaintingsArr from "../utils/PaintingsArr";
 import Button from "../components/Button";
-import "./WorkList.css";
+import "../styles/WorkList.css";
 
 export const WorkList = () => {
   return (
@@ -8,7 +8,7 @@ export const WorkList = () => {
       {PaintingsArr.map((itm) => {
         return (
           <div className="Work">
-            <h4>
+            <h4 className="font-mono">
               {" "}
               {`${itm.artist} - `}
               <i>{`${itm.title}`}</i>

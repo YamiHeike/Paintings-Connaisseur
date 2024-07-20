@@ -20,7 +20,7 @@ function Card({ imgList }) {
       alert("Congrats! Correct answer!");
       newImgList.filter((itm) => newImgList[itm] !== newImgList[randNum]);
       setDataArr((prev) => prev - 1);
-      setScore(prev + 1);
+      setScore((prev) => prev++);
     } else if (
       arr.title.toLowerCase() === newImgList[randNum].title.toLowerCase() &&
       arr.artist.toLowerCase() === newImgList[randNum].originalLetters
@@ -28,7 +28,7 @@ function Card({ imgList }) {
       alert("Congrats! Correct answer!");
       newImgList.filter((itm) => newImgList[itm] !== newImgList[randNum]);
       setDataArr((prev) => prev - 1);
-      setScore(prev + 1);
+      setScore((prev) => prev++);
     } else {
       alert(
         `The correct answer was "${newImgList[randNum].title}" by ${newImgList[randNum].artist}. :(`
@@ -42,9 +42,12 @@ function Card({ imgList }) {
   const [score, setScore] = useState(0);
 
   return (
-    <div className="Card">
+    <div className="Card bg-white py-2 px-2 rounded shadow-m my-2 md:my-6">
       <>
-        <img src={newImgList[randNum].src} className="painting" />
+        <img
+          src={newImgList[randNum].src}
+          className="painting max-h-[50rem] w-full object-cover object-center shadow-md"
+        />
         <AnsForm submitFunc={submitForm} />
       </>
     </div>

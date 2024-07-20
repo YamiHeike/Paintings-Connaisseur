@@ -18,7 +18,10 @@ export const Homepage = () => {
         <h2>Let's get you started</h2>
       </div>
       <div className="rounded flex flex-col items-center justify-center sm:my-2 md:my-10 bg-white lg:w-8/12 md:w-9/12 mx-auto px-2 py-2 shadow-md sm:w-10/12">
-        <img src={PaintingsArr[0].src} className="" />
+        <img
+          src={PaintingsArr[0].src}
+          className="max-h-96 w-full object-cover"
+        />
         <div className="my-2 text-center">
           <p>
             <BsStars className="inline-block text-yellow-500 mx-2" />

@@ -27,6 +27,7 @@ function AnsForm({ submitFunc, resetFunc }) {
           id="title"
           name="title"
           placeholder="Title"
+          className="border-2 border-blue-200"
           onChange={handleChange}
           value={data.title}
           required
@@ -37,6 +38,7 @@ function AnsForm({ submitFunc, resetFunc }) {
           id="artist"
           name="artist"
           placeholder="Artist"
+          className="border-2 border-blue-200"
           onChange={handleChange}
           value={data.artist}
           required

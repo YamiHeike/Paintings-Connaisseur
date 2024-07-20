@@ -1,5 +1,5 @@
-import PaintingsArr from "../PaintingsArr";
-import Button from "../Button";
+import PaintingsArr from "../utils/PaintingsArr";
+import Button from "../components/Button";
 import "./WorkList.css";
 
 export const WorkList = () => {

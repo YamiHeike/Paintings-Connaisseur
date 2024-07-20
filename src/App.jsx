@@ -1,7 +1,7 @@
 import "./App.css";
-import Card from "./Card";
-import PaintingsArr from "./PaintingsArr";
-import Footer from "./Footer";
+import Card from "./components/Card";
+import PaintingsArr from "./utils/PaintingsArr";
+import Footer from "./components/Footer";
 import { useState } from "react";
 import { WorkList } from "./pages/WorkList";
 import { RouterProvider } from "react-router-dom";

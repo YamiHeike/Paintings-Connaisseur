@@ -1,6 +1,6 @@
 import palette from "../assets/palette.png";
-import "./Navbar.css";
-import Header from "./Header";
+import "../styles/Navbar.css";
+import Header from "../ui/Header";
 import { NavLink } from "react-router-dom";
 import { routes } from "../routes/routes";
 

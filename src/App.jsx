@@ -1,26 +1,27 @@
-import './App.css';
-import Navbar from './Navbar';
-import Card from './Card';
-import PaintingsArr from './PaintingsArr';
-import Footer from './Footer';
-import {useState} from 'react';
-import WorkList from './WorkList';
-
+import "./App.css";
+import Card from "./Card";
+import PaintingsArr from "./PaintingsArr";
+import Footer from "./Footer";
+import { useState } from "react";
+import { WorkList } from "./pages/WorkList";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/routes";
 
 function App() {
   const [isList, setIsList] = useState(false);
 
   const swap = () => {
     setIsList(!isList);
-  }
+  };
 
   return (
-    <div class="App">
-    <Navbar listArray={[{header: isList? 'Return' : 'List of Works', func: swap}]}/>
-    {isList? <WorkList onClickFunc={swap}/> : <Card imgList={PaintingsArr} />}
-    <Footer/>
-    </div>
-  )
+    <RouterProvider router={router}>
+      <div class="App">
+        {isList ? <WorkList /> : <Card imgList={PaintingsArr} />}
+        <Footer />
+      </div>
+    </RouterProvider>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,28 @@
+.Button {
+  padding: 0.5em;
+  margin: 0.25em auto;
+
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Button:hover {
+  background-color: rgba(0, 0, 0);
+  border-radius: 0.25em;
+  color: rgb(255, 255, 255);
+  transform: translate(1px 1px);
+  padding-inline: 4em;
+}
+
+@media screen and (max-width: 768px) {
+  .Button:hover {
+    color: rgb(0, 132, 255);
+    border-left: rgb(0, 132, 255) solid 2px;
+    border-right: rgb(0, 132, 255) solid 2px;
+    background-color: white;
+  }
+}

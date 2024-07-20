@@ -1,0 +1,42 @@
+.WorkList {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.Work {
+  border: 2px solid black;
+  background-color: black;
+  margin: 1.2em auto;
+}
+
+.WorkList img {
+  width: 100%;
+  height: auto;
+}
+
+.WorkList Button {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.WorkList h4 {
+  background-color: rgb(9, 14, 22);
+  color: whitesmoke;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+@media all and (min-width: 768px) {
+  .Work {
+    width: 75%;
+    margin: 1.5em auto;
+  }
+
+  .WorkList h4 {
+    font-size: 1.5em;
+  }
+}

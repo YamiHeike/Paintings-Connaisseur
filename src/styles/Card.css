@@ -1,0 +1,10 @@
+.Card {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 1200px) {
+  .Card {
+    width: 80%;
+  }
+}

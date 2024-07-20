@@ -14,14 +14,7 @@ function App() {
     setIsList(!isList);
   };
 
-  return (
-    <RouterProvider router={router}>
-      <div class="App">
-        {isList ? <WorkList /> : <Card imgList={PaintingsArr} />}
-        <Footer />
-      </div>
-    </RouterProvider>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;

@@ -1,13 +1,14 @@
 import "../styles/Card.css";
 import AnsForm from "./AnsForm";
-import { v4 as uuid } from "uuid";
+import { useId } from "react";
 import { useState } from "react";
 
 function Card({ imgList }) {
+  let id = useId();
   const newImgList = imgList.map((itm) => {
     return {
       ...itm,
-      key: uuid(),
+      key: id,
     };
   });
 

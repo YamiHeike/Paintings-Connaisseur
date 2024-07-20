@@ -25,5 +25,6 @@
     color: rgb(0, 132, 255);
     border-left: rgb(0, 132, 255) solid 2px;
     border-right: rgb(0, 132, 255) solid 2px;
+    background-color: white;
   }
 }

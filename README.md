@@ -1,5 +1,13 @@
-# React + Vite
+# Paintings Connaisseur
 
-A simple learning tool that aims to help the user memorise paintings. 
+A simple learning tool that aims to help the user memorise paintings.
 
-24.10: The first version is available. In the second one I hope to introduce a database connection to make it more effective and proffessional, as well as more advanced React hooks.
+<li>
+  Homepage provides the user all the necessary instructions
+</li>  
+<li>
+  During the game, the generator chooses a painting from painting list and forces the learner to keep trying to guess the author and the title until they get it correctly.
+</li>
+<li>
+  The entire list of paintings is available in the List of Works page
+</li>

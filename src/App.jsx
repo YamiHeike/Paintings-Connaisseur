@@ -1,11 +1,9 @@
 import "./App.css";
-import Card from "./components/Card";
-import PaintingsArr from "./utils/PaintingsArr";
-import Footer from "./components/Footer";
 import { useState } from "react";
-import { WorkList } from "./pages/WorkList";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routes/routes";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 function App() {
   const [isList, setIsList] = useState(false);
@@ -14,7 +12,11 @@ function App() {
     setIsList(!isList);
   };
 
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <Provider store={store}>
+      <RouterProvider router={router}></RouterProvider>
+    </Provider>
+  );
 }
 
 export default App;

@@ -1,5 +1,9 @@
 # Paintings Connaisseur
 
+
+![](/src/assets/p_connaiseur.png)
+
+
 A simple learning tool that aims to help the user memorise paintings.
 
 <li>

@@ -48,7 +48,7 @@ function Card({ imgList }) {
   };
 
   return (
-    <div className="Card bg-white py-2 px-2 rounded shadow-m my-2 md:my-6">
+    <div className="Card bg-white py-2 px-2 rounded shadow-m my-2 md:my-6 max">
       <>
         <img
           src={newImgList[randNum].src}
